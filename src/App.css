@@ -8,6 +8,7 @@ body, html{
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  overflow-x: hidden;
 }
 
 .App {
@@ -115,6 +116,7 @@ body, html{
 .map-iframe{
   grid-area: map;
   height: 500px;
+  
 }
 
 .barplot-iframe{
@@ -134,6 +136,8 @@ body, html{
 
   .map-iframe{
     height: 400px;
+    width: 200%;
+    margin-left: -50%;
   }
   .barplot-iframe{
     height: 400px;
@@ -157,10 +161,21 @@ body, html{
 }
 .company-selector{
   display: inline-block;
-  margin: 0 0.5em; 
+  margin: 0 0.5em 1em; 
+  padding: 0 0.25em;
   text-transform: capitalize;
   text-align: left;
   cursor: pointer;
+}
+
+
+.selected-true{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.selected-false{
+  color: var(--semi-light);
 }
 
 

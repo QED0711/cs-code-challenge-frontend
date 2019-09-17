@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CompanySelect = ({ companies, setCurrentComp }) => {
+const CompanySelect = ({ companies, currentComp, setCurrentComp }) => {
 
     const handleClick = (company) => {
         return () => {
@@ -10,8 +10,8 @@ const CompanySelect = ({ companies, setCurrentComp }) => {
 
     const companyDivs = (companies) => {
         return companies.map((c, i) => {
-            return <div key={i} className='company-selector' onClick={handleClick(c)}>
-                <p>{c.replace(' apartments', '')}</p>
+            return <div key={i} className={`company-selector selected-${c === currentComp}`} onClick={handleClick(c)}>
+                {c.replace(' apartments', '')}
             </div>
         })
     }
