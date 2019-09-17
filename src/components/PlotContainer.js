@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CompanySelect from './CompanySelect';
 
-const PlotContainer = ({ feature }) => {
+const PlotContainer = ({ feature, mapTitle, barTitle }) => {
     const [currentComp, setCurrentComp] = useState('hillcrest apartments')
 
     const companies = [
@@ -16,13 +16,15 @@ const PlotContainer = ({ feature }) => {
     return (
         <div className="plot-container">
             <div className="map-container">
-                <iframe className="map-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${currentComp.replace(/\s/g, "_")}-${feature}-map.html`} />
+                <h3 className="plot-title">{mapTitle}</h3>
+                <iframe title={`${currentComp}-${feature}-map`} className="map-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${currentComp.replace(/\s/g, "_")}-${feature}-map.html`} />
 
                 <CompanySelect companies={companies} setCurrentComp={setCurrentComp} />
             </div>
             
             <div className="barplot-container">
-                <iframe className="barplot-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${feature}-bar.html`} />
+                <h3 className="plot-title">{barTitle}</h3>
+                <iframe title={`${feature}-barmap`} className="barplot-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${feature}-bar.html`} />
             </div>
         </div>
     )

@@ -11,6 +11,12 @@ body, html{
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 100px){
+  .App{
+    widows: 100%;
+  }
+}
+
 
 
 
@@ -54,10 +60,10 @@ body, html{
   }
 
   .map-iframe{
-    height: 600px;
+    height: 400px;
   }
   .barplot-iframe{
-    height: 600px;
+    height: 400px;
   }
 }
 
@@ -73,10 +79,13 @@ body, html{
 
 
 /* COMPANY SELECT */
-
+.company-select-container{
+  text-align: left;
+}
 .company-selector{
   display: inline-block;
   margin: 0 0.5em; 
   text-transform: capitalize;
+  text-align: left;
   cursor: pointer;
 }
