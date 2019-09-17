@@ -7,6 +7,11 @@ function App() {
   return (
     <div className="App">
       <PlotContainer feature={'total_in_state'} />
+      <PlotContainer feature={'2010_population'} />
+      <PlotContainer feature={'total_income'} />
+      <PlotContainer feature={'num_unemployed'} />
+      <PlotContainer feature={'num_dependents'} />
+      <PlotContainer feature={'median_age'} />
     </div>
   );
 }

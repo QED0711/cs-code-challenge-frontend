@@ -11,7 +11,7 @@ const CompanySelect = ({ companies, setCurrentComp }) => {
     const companyDivs = (companies) => {
         return companies.map((c, i) => {
             return <div key={i} className='company-selector' onClick={handleClick(c)}>
-                <p>{c}</p>
+                <p>{c.replace(' apartments', '')}</p>
             </div>
         })
     }
