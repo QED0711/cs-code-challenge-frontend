@@ -13,11 +13,17 @@ const PlotContainer = ({ feature }) => {
         'riverview apartments',
     ]
 
-    return(
+    return (
         <div className="plot-container">
-            <iframe className="map-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${currentComp.replace(/\s/g, "_")}-${feature}-map.html`}/>
+            <div className="map-container">
+                <iframe className="map-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${currentComp.replace(/\s/g, "_")}-${feature}-map.html`} />
 
-            <CompanySelect companies={companies} setCurrentComp={setCurrentComp} />
+                <CompanySelect companies={companies} setCurrentComp={setCurrentComp} />
+            </div>
+            
+            <div className="barplot-container">
+                <iframe className="barplot-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${feature}-bar.html`} />
+            </div>
         </div>
     )
 

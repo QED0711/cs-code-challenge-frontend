@@ -6,17 +6,59 @@ body, html{
 
 .App {
   text-align: center;
+  width: 95%;
+
+  margin: 0 auto;
 }
 
 
 
 
+/* PLOT CONTAINER */
 
+.plot-container{
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+
+  border-bottom: 4px solid black;
+}
+
+.map-iframe, .barplot-iframe{
+  border: none;
+  width: 100%;
+}
 
 .map-iframe{
-  border: none;
-  width: 800px;
-  height: 800px;
+  height: 500px;
+}
+
+.barplot-iframe{
+  height: 500px;
+}
+
+@media only screen and (max-width:1000px){
+  .plot-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "bar"
+    "map";
+  }
+
+  .map-container{
+    grid-area: map
+  }
+  
+  .barplot-container{
+    grid-area: bar
+  }
+
+  .map-iframe{
+    height: 600px;
+  }
+  .barplot-iframe{
+    height: 600px;
+  }
 }
 
 
