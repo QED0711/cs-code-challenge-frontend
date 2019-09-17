@@ -16,6 +16,9 @@ const PlotContainer = ({ feature, mapTitle, barTitle }) => {
 
     return (
         <div className="plot-container">
+            
+            <ContentContainer feature={feature}/>
+            
             <div className="map-container">
                 <h3 className="plot-title">{`${mapTitle}: ${currentComp}`}</h3>
                 <iframe title={`${currentComp}-${feature}-map`} className="map-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${currentComp.replace(/\s/g, "_")}-${feature}-map.html`} />
@@ -28,7 +31,7 @@ const PlotContainer = ({ feature, mapTitle, barTitle }) => {
                 <iframe title={`${feature}-barmap`} className="barplot-iframe" src={`https://qed0711.github.io/CS-code-chellenge/visuals/${feature}-bar.html`} />
             </div>
 
-            <ContentContainer feature={feature}/>
+            
         </div>
     )
 
