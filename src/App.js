@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import PlotContainer from './components/PlotContainer';
+import Conclusion from './components/Conclusion';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         mapTitle={"Average unemployment by zip code"}
         barTitle={"Average unemployment by location"}
       />
+      <Conclusion />
     </div>
   );
 }
