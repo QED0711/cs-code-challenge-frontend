@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-// import Zoom from 'react-reveal/Zoom'
+import Zoom from 'react-reveal/Zoom'
 // import Reveal from 'react-reveal/Reveal'
 // import TransitionGroup from 'react-transition-group/TransitionGroup'
 
@@ -17,53 +17,65 @@ function App() {
     <div className="App">
       <Header />
       <div className="main-container">
-            <Intro />
+        <Intro />
         
-            <PlotContainer
-              feature={'total_in_state'}
-              mapTitle={"Total locations by state"}
-              barTitle={"Total locations across the US"}
-            />
+        <Zoom bottom>
+          <PlotContainer
+            feature={'total_in_state'}
+            mapTitle={"Total locations by state"}
+            barTitle={"Total locations across the US"}
+          />
+        </Zoom>
 
-        
-            <PlotContainer
-              feature={'2010_population'}
-              mapTitle={"Average population by zip code"}
-              barTitle={"Average population in served communities"}
-            />
+        <Zoom bottom>
 
-        
-            <PlotContainer
-              feature={'median_age'}
-              mapTitle={"Average median age by zip code"}
-              barTitle={"Average median age in served communities"}
-            />
+          <PlotContainer
+            feature={'2010_population'}
+            mapTitle={"Average population by zip code"}
+            barTitle={"Average population in served communities"}
+          />
+        </Zoom>
 
+        <Zoom bottom>
 
-        
-            <PlotContainer
-              feature={'total_income'}
-              mapTitle={"Average household income by zip code"}
-              barTitle={"Average household income in served communities"}
-            />
-        
-            <PlotContainer
-              feature={'num_dependents'}
-              mapTitle={"Average number dependents by zip code"}
-              barTitle={"Average number dependents in served communities"}
-            />
+          <PlotContainer
+            feature={'median_age'}
+            mapTitle={"Average median age by zip code"}
+            barTitle={"Average median age in served communities"}
+          />
+        </Zoom>
 
 
-        
-            <PlotContainer
-              feature={'num_unemployed'}
-              mapTitle={"Average unemployment by zip code"}
-              barTitle={"Average unemployment in served communities"}
-            />
-      
-          <Conclusion />
+        <Zoom bottom>
 
-          <Footer />
+          <PlotContainer
+            feature={'total_income'}
+            mapTitle={"Average household income by zip code"}
+            barTitle={"Average household income in served communities"}
+          />
+        </Zoom>
+        <Zoom bottom>
+
+          <PlotContainer
+            feature={'num_dependents'}
+            mapTitle={"Average number dependents by zip code"}
+            barTitle={"Average number dependents in served communities"}
+          />
+        </Zoom>
+
+
+        <Zoom bottom>
+
+          <PlotContainer
+            feature={'num_unemployed'}
+            mapTitle={"Average unemployment by zip code"}
+            barTitle={"Average unemployment in served communities"}
+          />
+        </Zoom>
+
+        <Conclusion />
+
+        <Footer />
       </div>
     </div>
   );
