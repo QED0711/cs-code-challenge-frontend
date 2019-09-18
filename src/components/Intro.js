@@ -5,7 +5,7 @@ const Intro = () => {
     return(
         <div className="intro">
             <p>
-                The following analysis looks into location and regional demographic data for <strong>six real estate companies</strong> offering apartments across the United States. Each section begins with a summary of the findings about a specific feature, followed by two interactive graphs. Mouse over the map to see specific values for each state. You can change which company's data is displayed on the map by clicking their name below the chart. The bar plot provides national averages for each company, and can also be moused over for additional information. 
+                The following analysis looks into location and regional demographic data for <strong>six real estate companies</strong> offering apartments across the United States. Each section begins with a summary of the findings, followed by two interactive graphs. Mouse over the <strong>map</strong> to see specific values for each state. You can change which company's data is displayed on the map by <strong>clicking their name</strong> below the chart. The <strong>bar plot</strong> provides national averages for each company, and can also be moused over for additional information. 
             </p>
 
             <p>
