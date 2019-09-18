@@ -184,5 +184,13 @@ body, html{
 /* CONCLUSION */
 
 .conclusion{
-  margin-bottom: 5em;
+  border-bottom: 2px dashed var(--semi-dark);
+}
+
+
+/* FOOTER */
+
+.footer{
+  text-align: left;
+  color: var(--semi-dark);
 }
