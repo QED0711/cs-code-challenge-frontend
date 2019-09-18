@@ -18,7 +18,7 @@ const Conclusion = () => {
                 </p>
 
                 <p>
-                    And if you're employed or looking for work, and are interested in housing opportunities that won't break the bank, <strong>Couryard</strong>, <strong>Park Place</strong>, <strong>Park View</strong>, and <strong>Parkside</strong> generally serve areas that may be a good fit for your needs. But you may want to avoid west coast locations and Texas where your wages would need to be higher to afford housing, or Alaska, where there is high unemployment.
+                    And if you're employed or looking for work, and are interested in housing opportunities that won't break the bank, <strong>Couryard</strong>, <strong>Park Place</strong>, <strong>Park View</strong>, and <strong>Parkside</strong> generally serve areas that may be a good fit for your needs. But you may want to avoid west coast locations and Texas where cost of living appears to be higher, or Alaska, where there is high unemployment.
                 </p>
             </div>
         </div>
